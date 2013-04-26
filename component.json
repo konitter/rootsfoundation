@@ -1,0 +1,7 @@
+{
+  "name": "rootsfoundation",
+  "version": "0.1.0",
+  "dependencies": {
+    "foundation": "~4.1.2"
+  }
+}

@@ -1,0 +1,36 @@
+!!!
+| <!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+| <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+head
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	title #{site_title}
+	meta(name='description', content='')
+	meta(name='viewport', content='width=device-width,initial-scale=1.0')
+	link(rel='stylesheet', href='/css/normalize.css')
+	link(rel='stylesheet', href='/css/foundation.css')
+	script(src='/js/vendor/custom.modernizr.js')
+| <body class="antialiased">
+nav.top-bar
+	ul.title-area
+		li.name
+			h1
+				a(href='/') #{site_title}
+		li.toggle-topbar.menu-icon
+			a(href='#')
+				span Menu
+	section.top-bar-section
+		ul.left
+			li.divider
+			include _navber
+		ul.right
+			li.has-form
+				form
+					.row.collapse
+						.small-8.columns
+							input(type='text')
+						.small-4.columns
+							a.alert.button(href='#') Search
+			li.divider.show-for-small
+			li.has-form
+				a.button(href='#') Button!

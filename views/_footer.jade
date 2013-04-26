@@ -1,0 +1,8 @@
+footer.row
+	.large-12.columns
+		hr
+		p!= footer_text()
+script
+	document.write('<script src=' + ('__proto__' in {} ? '/js/vendor/zepto' : '/js/vendor/jquery') + '.js><\/script>')
+script(src='/js/foundation.js')
+| <script>$(document).foundation();</script>
